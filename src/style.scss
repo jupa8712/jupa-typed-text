@@ -1,0 +1,12 @@
+.typed-strings {
+	display: block;
+	>p {
+		display: none;
+	}
+}
+
+.wp-block-jupa-typed-text[data-show-cursor="false"] {
+	.typed-cursor {
+		opacity: 0 !important;
+	}
+}

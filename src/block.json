@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "jupa/typed-text",
+  "version": "1.0",
+  "title": "Typed Text",
+  "category": "widgets",
+  "icon": "shortcode",
+  "description": "Is a block that types.",
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true,
+      "link": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "attributes": {
+    "clientid": {
+      "type": "string"
+    },
+    "typeSpeed": {
+      "type": "number",
+      "default": 50
+    },
+    "backSpeed": {
+      "type": "number",
+      "default": 50
+    },
+    "startDelay": {
+      "type": "number",
+      "default": 1000
+    },
+    "backDelay": {
+      "type": "number",
+      "default": 2000
+    },
+    "showCursor": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "smartBackspace": {
+      "type": "boolean",
+      "default": true
+    },
+    "shuffle": {
+      "type": "boolean",
+      "default": false
+    },
+    "onComplete": {
+      "type": "string"
+    }
+  },
+  "textdomain": "jupa-typed-text",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-index.css"
+}
